@@ -17,7 +17,7 @@ publishing {
     publications {
         create<MavenPublication>("maven") {
             from(components["java"])
-            groupId = "com.github.ab180"
+            groupId = "com.github.takboo"
             artifactId = "fatjar"
             version = "1.8.0"
         }
