@@ -37,4 +37,5 @@ dependencies {
     implementation("com.android.tools.build:gradle:8.0.2")
     implementation("org.zeroturnaround:zt-zip:1.16")
     implementation("io.github.g00fy2:versioncompare:1.5.0")
+    implementation(fileTree(mapOf("dir" to "libs", "include" to "jarjar*.jar")))
 }
