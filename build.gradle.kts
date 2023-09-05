@@ -9,8 +9,8 @@ repositories {
 }
 
 java {
-    sourceCompatibility = JavaVersion.VERSION_11
-    targetCompatibility = JavaVersion.VERSION_11
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
 }
 
 publishing {
@@ -19,7 +19,7 @@ publishing {
             from(components["java"])
             groupId = "com.github.takboo"
             artifactId = "fatjar"
-            version = "1.8.0"
+            version = "1.8.2"
         }
     }
     repositories {
