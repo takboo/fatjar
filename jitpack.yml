@@ -1,7 +1,7 @@
 jdk:
   - openjdk17
 before_install:
-  - bash ./ensure-java-15.sh install
+  - bash ./ensure-java-17.sh install
 install:
-  - if ! bash ./ensure-java-15 use; then source ~/.sdkman/bin/sdkman-init.sh; fi
+  - if ! bash ./ensure-java-17 use; then source ~/.sdkman/bin/sdkman-init.sh; fi
   - java -version
