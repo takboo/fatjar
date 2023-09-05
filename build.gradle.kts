@@ -9,8 +9,8 @@ repositories {
 }
 
 java {
-    sourceCompatibility = JavaVersion.VERSION_1_8
-    targetCompatibility = JavaVersion.VERSION_1_8
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
 }
 
 publishing {
@@ -19,7 +19,7 @@ publishing {
             from(components["java"])
             groupId = "com.github.ab180"
             artifactId = "fatjar"
-            version = "1.7.0"
+            version = "1.8.0"
         }
     }
     repositories {
@@ -34,7 +34,7 @@ dependencies {
     implementation(gradleApi())
     implementation(localGroovy())
 
-    implementation("com.android.tools.build:gradle:4.2.2")
-    implementation("org.zeroturnaround:zt-zip:1.13")
-    implementation("io.github.g00fy2:versioncompare:1.4.1")
+    implementation("com.android.tools.build:gradle:8.0.2")
+    implementation("org.zeroturnaround:zt-zip:1.16")
+    implementation("io.github.g00fy2:versioncompare:1.5.0")
 }
